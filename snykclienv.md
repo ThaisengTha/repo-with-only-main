@@ -38,14 +38,14 @@ Create a file in the same folder, certs.env with the following content.
 - Make script executable: `chmod +x snykclienv.sh`
 - Execute script and follow the prompt
 
-## Option 1: Local Environment Token (Classic)
+### Option 1: Local Environment Token (Classic)
 This option is simple, but requires local ENV of SNYK_TOKEN which also overrides the oauth auth for snyk. 
 The env variable can be renamed to CLASSIC_SNYK_TOKEN in local environment  -e SNYK_TOKEN=${CLASSIC_SNYK_TOKEN} to avoid that, but still requires token in local env file. 
 
 Create a local env var SNYK_TOKEN with your snyk api token.   
     export SNYK_TOKEN=<Your Snyk API Token>.
 
-## Option 2: Env Variables Stored in 1Password
+### Option 2: Env Variables Stored in 1Password
 Ensure that you have the 1Password cli.  https://1password.com/downloads/command-line
 Create an “API Credential” entry in your employee vault of 1password called ENV_GCP_SNYK_TOKEN and put your Snyk api token in that.  (you can create other env vars for the other environments too)
 Alternatively, you can name your entry differently, but you need to adjust the name in the -e SNYK_TOKEN=op…. section below.
