@@ -43,8 +43,9 @@ This option is simple, but requires local ENV of SNYK_TOKEN which also overrides
 The env variable can be renamed to CLASSIC_SNYK_TOKEN in local environment  -e SNYK_TOKEN=${CLASSIC_SNYK_TOKEN} to avoid that, but still requires token in local env file. 
 
 Create a local env var SNYK_TOKEN with your snyk api token.   
+```bash
     export SNYK_TOKEN=<Your Snyk API Token>.
-
+```
 ### Option 2: Env Variables Stored in 1Password
 Ensure that you have the 1Password cli.  https://1password.com/downloads/command-line
 Create an “API Credential” entry in your employee vault of 1password called ENV_GCP_SNYK_TOKEN and put your Snyk api token in that.  (you can create other env vars for the other environments too)
