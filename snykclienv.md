@@ -22,6 +22,7 @@ Leave the certs where they are but copy the certs into a new folder called zscal
 ```bash
 mkdir -p ~/Documents/zscaler
 cp ~/Documents/zscaler-root-ca.* ~/Documents/zscaler/
+```
 
 Create a file in the same folder, certs.env with the following content.
 
